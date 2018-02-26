@@ -1,0 +1,9 @@
+{% if branch_list %}
+    <ul>
+    {% for branch in branch_list %}
+        <li><a href="/comp/{{ branch.id }}/">{{ branch.branch_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No branch listed</p>
+{% endif %}
